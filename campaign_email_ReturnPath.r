@@ -1,6 +1,7 @@
 # Created on Sun Oct 9 10:58:21 2016
 # Author: Evelyn
 
+#make sure the data file is in current work directoty
 # prepare the workspace
 rm(list = ls())
 set.seed(2016)
