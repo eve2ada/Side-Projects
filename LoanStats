@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 01 23:03:59 2017
+
+@author: eve2ada
+"""
+import pandas as pd
+
+# load data
+df_3b = pd.read_csv("LoanStats3b.csv", skiprows = 1, header = 0)
+df_3c = pd.read_csv("LoanStats3c.csv", skiprows = 1, header = 0)
+df_3d = pd.read_csv("LoanStats3d.csv", skiprows = 1, header = 0)
+
+dfs = [df_3b, df_3c, df_3d]
+df = pd.concat(dfs)
